@@ -1,0 +1,125 @@
+{
+  "languages": [
+    "",
+    "python",
+    "typescript",
+    "javascript",
+    "jupyter-notebook",
+    "c++",
+    "rust",
+    "go"
+  ],
+  "periods": [
+    "daily",
+    "weekly",
+    "monthly"
+  ],
+  "categories": {
+    "Quantitative Research & Trading": [
+      "\\bquantitative[- ](?:finance|trading|investment|financial|portfolio)\\b",
+      "(?:algorithmic|systematic|automated|quant)[- ]trading",
+      "\\bbacktest(?:ing|er)?\\b",
+      "trading[- ](?:bot|engine|platform|system|strategy|strategies)",
+      "(?:paper|high[- ]frequency)[- ]trading",
+      "\\bquantlib\\b",
+      "\\bzipline\\b",
+      "\\bbacktrader\\b",
+      "\\bvectorbt\\b",
+      "量化",
+      "回测",
+      "交易策略",
+      "交易系统",
+      "量化交易",
+      "程序化交易"
+    ],
+    "Market Data & Financial Analysis": [
+      "(?:stock|equity|forex|bond|financial|market)[- ](?:market|data|analysis|analytics|research)",
+      "\\bfinancial\\b",
+      "\\bfinance\\b",
+      "\\byfinance\\b",
+      "\\bakshare\\b",
+      "\\btushare\\b",
+      "\\bopenbb\\b",
+      "\\bfinrl\\b",
+      "金融",
+      "财经",
+      "股票",
+      "证券",
+      "期货",
+      "外汇",
+      "行情数据"
+    ],
+    "Portfolio & Risk Management": [
+      "(?:investment|stock|trading|financial|asset)[- ]portfolio",
+      "portfolio[- ](?:management|optimi[sz]ation|tracking|tracker|analysis)",
+      "(?:financial|market|credit|portfolio)[- ]risk",
+      "\\basset[- ]management\\b",
+      "\\bwealth[- ]management\\b",
+      "投资组合",
+      "资产配置",
+      "资产管理",
+      "财务风险",
+      "金融风险"
+    ],
+    "Payments, Banking & Accounting": [
+      "\\bfintech\\b",
+      "\\bbanking\\b",
+      "\\bpayments?\\b",
+      "\\baccounting[- ](?:software|platform|system|tools?|app(?:lication)?)\\b",
+      "\\bbookkeeping\\b",
+      "double[- ]entry",
+      "(?:financial|bank|money)[- ]ledger",
+      "\\bopen[- ]banking\\b",
+      "\\bcore[- ]banking\\b",
+      "支付",
+      "银行",
+      "会计",
+      "记账",
+      "复式记账",
+      "金融科技",
+      "\\b(?:financial|business)[- ]accounting\\b"
+    ],
+    "Personal Finance & Budgeting": [
+      "\\bpersonal[- ]finance\\b",
+      "\\b(?:personal|family|household|financial)[- ]budget(?:ing)?\\b",
+      "expense[- ](?:track|manage)",
+      "money[- ](?:manage|track)",
+      "家庭财务",
+      "个人财务",
+      "个人理财",
+      "预算管理",
+      "账单管理",
+      "支出管理",
+      "\\bbudgeting\\b"
+    ]
+  },
+  "include_repositories": [],
+  "exclude_repositories": [],
+  "focus_filter": {
+    "exclude_patterns": [
+      "\\b(?:crypto(?:currency|currencies)?|bitcoin|ethereum|solana|defi|blockchain|web3|solidity|on[- ]chain)\\b",
+      "加密货币",
+      "区块链",
+      "比特币",
+      "以太坊",
+      "链上",
+      "去中心化金融",
+      "\\bdecentrali[sz]ed[- ]finance\\b",
+      "\\bdigital[- ]assets?\\b",
+      "\\bstablecoins?\\b",
+      "\\bsmart[- ]contracts?\\b"
+    ],
+    "keep_patterns": [
+      "\\b(?:stocks?|equity|equities|bonds?|forex|securities|banking|accounting|bookkeeping|budgeting)\\b",
+      "\\bpersonal[- ]finance\\b",
+      "股票",
+      "证券",
+      "期货",
+      "银行",
+      "会计",
+      "记账",
+      "个人财务",
+      "预算管理"
+    ]
+  }
+}
