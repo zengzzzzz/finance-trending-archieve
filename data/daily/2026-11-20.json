@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-20",
+  "repositories": [
+    {
+      "name": "juspay/hyperswitch",
+      "url": "https://github.com/juspay/hyperswitch",
+      "description": "Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables connectivity to multiple payment, payout, fraud, vault and tokenization providers | Uplifts authorization with intelligent routing and revenue recovery | Reduce payment processing costs with cost observability | Reduces payment ops with reconciliation",
+      "language": "Rust",
+      "stars": 45851,
+      "forks": 6695,
+      "period_stars": 35,
+      "categories": [
+        "Payments, Banking & Accounting"
+      ],
+      "sources": [
+        {
+          "language": "rust",
+          "period": "daily",
+          "rank": 5,
+          "period_stars": 35
+        }
+      ]
+    },
+    {
+      "name": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 123215,
+      "forks": 23626,
+      "period_stars": 11573,
+      "categories": [
+        "Market Data & Financial Analysis"
+      ],
+      "sources": [
+        {
+          "language": "python",
+          "period": "monthly",
+          "rank": 9,
+          "period_stars": 11573
+        }
+      ]
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 7320,
+      "forks": 1469,
+      "period_stars": 3385,
+      "categories": [
+        "Quantitative Research & Trading",
+        "Market Data & Financial Analysis"
+      ],
+      "sources": [
+        {
+          "language": "all",
+          "period": "weekly",
+          "rank": 7,
+          "period_stars": 3385
+        },
+        {
+          "language": "python",
+          "period": "weekly",
+          "rank": 2,
+          "period_stars": 3385
+        }
+      ]
+    },
+    {
+      "name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 16795,
+      "forks": 1482,
+      "period_stars": 3226,
+      "categories": [
+        "Market Data & Financial Analysis",
+        "Personal Finance & Budgeting"
+      ],
+      "sources": [
+        {
+          "language": "all",
+          "period": "weekly",
+          "rank": 11,
+          "period_stars": 3226
+        }
+      ]
+    },
+    {
+      "name": "wealthfolio/wealthfolio",
+      "url": "https://github.com/wealthfolio/wealthfolio",
+      "description": "A beautiful, private, local-first personal finance tracker. Investments, net worth, spending, and simulations.",
+      "language": "Rust",
+      "stars": 9618,
+      "forks": 842,
+      "period_stars": 31,
+      "categories": [
+        "Market Data & Financial Analysis",
+        "Personal Finance & Budgeting"
+      ],
+      "sources": [
+        {
+          "language": "rust",
+          "period": "daily",
+          "rank": 13,
+          "period_stars": 31
+        }
+      ]
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 73521,
+      "forks": 57976,
+      "period_stars": 2595,
+      "categories": [
+        "Market Data & Financial Analysis"
+      ],
+      "sources": [
+        {
+          "language": "python",
+          "period": "weekly",
+          "rank": 4,
+          "period_stars": 2595
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://github.com/trending/c%2B%2B?since=daily",
+    "https://github.com/trending/c%2B%2B?since=monthly",
+    "https://github.com/trending/c%2B%2B?since=weekly",
+    "https://github.com/trending/go?since=daily",
+    "https://github.com/trending/go?since=monthly",
+    "https://github.com/trending/go?since=weekly",
+    "https://github.com/trending/javascript?since=daily",
+    "https://github.com/trending/javascript?since=monthly",
+    "https://github.com/trending/javascript?since=weekly",
+    "https://github.com/trending/jupyter-notebook?since=daily",
+    "https://github.com/trending/jupyter-notebook?since=monthly",
+    "https://github.com/trending/jupyter-notebook?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/python?since=monthly",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/trending/rust?since=daily",
+    "https://github.com/trending/rust?since=monthly",
+    "https://github.com/trending/rust?since=weekly",
+    "https://github.com/trending/typescript?since=daily",
+    "https://github.com/trending/typescript?since=monthly",
+    "https://github.com/trending/typescript?since=weekly",
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=monthly",
+    "https://github.com/trending?since=weekly"
+  ],
+  "schema_version": 1,
+  "scanned_repositories": 286
+}
