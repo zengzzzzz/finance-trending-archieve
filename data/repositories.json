@@ -6,9 +6,9 @@
       "url": "https://github.com/we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 16795,
-      "forks": 1482,
-      "period_stars": 3226,
+      "stars": 16975,
+      "forks": 1489,
+      "period_stars": 2476,
       "categories": [
         "Market Data & Financial Analysis",
         "Personal Finance & Budgeting"
@@ -18,20 +18,20 @@
           "language": "all",
           "period": "weekly",
           "rank": 11,
-          "period_stars": 3226
+          "period_stars": 2476
         }
       ],
       "first_seen": "2026-11-19",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "tradermonty/claude-trading-skills": {
       "name": "tradermonty/claude-trading-skills",
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7320,
-      "forks": 1469,
-      "period_stars": 3385,
+      "stars": 7489,
+      "forks": 1473,
+      "period_stars": 3471,
       "categories": [
         "Quantitative Research & Trading",
         "Market Data & Financial Analysis"
@@ -41,26 +41,26 @@
           "language": "all",
           "period": "weekly",
           "rank": 7,
-          "period_stars": 3385
+          "period_stars": 3471
         },
         {
           "language": "python",
           "period": "weekly",
           "rank": 2,
-          "period_stars": 3385
+          "period_stars": 3471
         }
       ],
       "first_seen": "2026-11-19",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "zhulinsen/daily_stock_analysis": {
       "name": "ZhuLinsen/daily_stock_analysis",
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
-      "stars": 73521,
-      "forks": 57976,
-      "period_stars": 2595,
+      "stars": 73588,
+      "forks": 57995,
+      "period_stars": 2174,
       "categories": [
         "Market Data & Financial Analysis"
       ],
@@ -69,20 +69,20 @@
           "language": "python",
           "period": "weekly",
           "rank": 4,
-          "period_stars": 2595
+          "period_stars": 2174
         }
       ],
       "first_seen": "2026-11-19",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "tauricresearch/tradingagents": {
       "name": "TauricResearch/TradingAgents",
       "url": "https://github.com/TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 123215,
-      "forks": 23626,
-      "period_stars": 11573,
+      "stars": 123331,
+      "forks": 23631,
+      "period_stars": 11447,
       "categories": [
         "Market Data & Financial Analysis"
       ],
@@ -91,20 +91,20 @@
           "language": "python",
           "period": "monthly",
           "rank": 9,
-          "period_stars": 11573
+          "period_stars": 11447
         }
       ],
       "first_seen": "2026-11-19",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "juspay/hyperswitch": {
       "name": "juspay/hyperswitch",
       "url": "https://github.com/juspay/hyperswitch",
       "description": "Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables connectivity to multiple payment, payout, fraud, vault and tokenization providers | Uplifts authorization with intelligent routing and revenue recovery | Reduce payment processing costs with cost observability | Reduces payment ops with reconciliation",
       "language": "Rust",
-      "stars": 45851,
-      "forks": 6695,
-      "period_stars": 35,
+      "stars": 45860,
+      "forks": 6696,
+      "period_stars": 15,
       "categories": [
         "Payments, Banking & Accounting"
       ],
@@ -113,20 +113,20 @@
           "language": "rust",
           "period": "daily",
           "rank": 5,
-          "period_stars": 35
+          "period_stars": 15
         }
       ],
       "first_seen": "2026-11-20",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "wealthfolio/wealthfolio": {
       "name": "wealthfolio/wealthfolio",
       "url": "https://github.com/wealthfolio/wealthfolio",
       "description": "A beautiful, private, local-first personal finance tracker. Investments, net worth, spending, and simulations.",
       "language": "Rust",
-      "stars": 9618,
-      "forks": 842,
-      "period_stars": 31,
+      "stars": 9659,
+      "forks": 845,
+      "period_stars": 46,
       "categories": [
         "Market Data & Financial Analysis",
         "Personal Finance & Budgeting"
@@ -136,11 +136,11 @@
           "language": "rust",
           "period": "daily",
           "rank": 13,
-          "period_stars": 31
+          "period_stars": 46
         }
       ],
       "first_seen": "2026-11-20",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     }
   }
 }
