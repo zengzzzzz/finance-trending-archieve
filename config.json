@@ -1,18 +1,16 @@
 {
   "languages": [
     "",
+    "go",
     "python",
-    "typescript",
     "javascript",
-    "jupyter-notebook",
+    "java",
+    "c",
     "c++",
-    "rust",
-    "go"
+    "typescript"
   ],
   "periods": [
-    "daily",
-    "weekly",
-    "monthly"
+    "daily"
   ],
   "categories": {
     "Quantitative Research & Trading": [

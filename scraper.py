@@ -191,6 +191,28 @@ def entries_markdown(records):
     return "\n\n".join(lines) or "No new projects this month."
 
 
+def write_archive_index(root):
+    months = sorted(
+        (path.stem for path in (root / "archived").glob("????-??.md")
+         if re.fullmatch(r"\d{4}-\d{2}", path.stem)), reverse=True
+    )
+    write_text(root / "archived" / "README.md", "# Monthly Archives\n\n" +
+               ("\n".join(f"- [{month}]({month}.md)" for month in months) or "No archives yet.") + "\n")
+
+
+def write_monthly_archives(root, records, current_month):
+    months = sorted({r["first_seen"][:7] for r in records.values()
+                     if r["first_seen"][:7] < current_month}, reverse=True)
+    for month in months:
+        monthly_records = [r for r in records.values() if r["first_seen"].startswith(month)]
+        write_text(root / "archived" / f"{month}.md",
+                   f"# Finance Trending Archive · {month}\n\n"
+                   "Projects are listed once, by their first-seen date.\n\n" +
+                   entries_markdown(monthly_records) + "\n")
+    write_archive_index(root)
+    return months
+
+
 def update_archive(root, today, repos, sources, scanned):
     state_path = root / "data" / "repositories.json"
     state = read_json(state_path, {"schema_version": 1, "repositories": {}})
@@ -213,11 +235,7 @@ def update_archive(root, today, repos, sources, scanned):
         daily[key] = {**repo, "sources": list(merged_sources.values())}
     snapshot.update({"schema_version": 1, "sources": sorted(set(snapshot["sources"]) | set(sources)), "repositories": sorted(daily.values(), key=lambda r: r["name"].casefold())})
     snapshot["scanned_repositories"] = max(scanned, snapshot.get("scanned_repositories", 0))
-    months = sorted({r["first_seen"][:7] for r in records.values()}, reverse=True)
-    for month in months:
-        monthly_records = [r for r in records.values() if r["first_seen"].startswith(month)]
-        write_text(root / "archived" / f"{month}.md", f"# Finance Trending Archive · {month}\n\nProjects are listed once, by their first-seen date.\n\n" + entries_markdown(monthly_records) + "\n")
-    write_text(root / "archived" / "README.md", "# Monthly Archives\n\n" + ("\n".join(f"- [{month}]({month}.md)" for month in months) or "No archives yet.") + "\n")
+    write_archive_index(root)
     write_text(state_path, json_text(state))
     write_text(snapshot_path, json_text(snapshot))
     render_readme(root, today, records, snapshot, additions)
@@ -227,7 +245,10 @@ def update_archive(root, today, repos, sources, scanned):
 def render_readme(root, today, records, snapshot, additions):
     template = (root / "README.template.md").read_text(encoding="utf-8")
     current = [r for r in records.values() if r["first_seen"].startswith(today[:7])]
-    summary = f"Updated: **{today} (UTC+8)** · **{len(records)}** projects archived · **{len(current)}** new this month · **{len(snapshot['repositories'])}** found today\n\n[Daily Snapshot](data/daily/{today}.json) · [Project Index](data/repositories.json) · [Monthly Archives](archived/README.md)"
+    snapshot_day = snapshot.get("date")
+    found_today = len(snapshot.get("repositories", [])) if snapshot_day == today else 0
+    snapshot_link = f"[Daily Snapshot](data/daily/{snapshot_day}.json)" if snapshot_day else "No daily snapshot yet"
+    summary = f"Updated: **{today} (UTC+8)** · **{len(records)}** projects archived · **{len(current)}** new this month · **{found_today}** found today\n\n{snapshot_link} · [Project Index](data/repositories.json) · [Monthly Archives](archived/README.md)"
     write_text(root / "README.md", template.replace("<!-- SUMMARY -->", summary).replace("<!-- ENTRIES -->", entries_markdown(current)))
 
 

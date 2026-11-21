@@ -1,6 +1,6 @@
 # Finance Trending Archive
 
-[![Daily Finance Trending](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/update.yml/badge.svg)](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/update.yml)
+[![Daily Github Trending](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/schedule_daily.yml/badge.svg)](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/schedule_daily.yml)
 
 Track and archive finance projects discovered on GitHub Trending.
 
@@ -8,8 +8,8 @@ Track and archive finance projects discovered on GitHub Trending.
 
 ## Features
 
-- Daily updates at **09:37 (UTC+8)** with GitHub Actions.
-- Daily, weekly, and monthly Trending lists across eight sources, including the all-language list, with source periods and ranks recorded.
+- Daily updates at **09:00 (UTC+8)** with GitHub Actions.
+- Daily Trending lists for all languages, Go, Python, JavaScript, Java, C, C++, and TypeScript.
 - Quantitative trading, financial data, portfolio management, payments, accounting, and personal finance tools.
 - Deduplicated entries with first-seen dates, monthly archives, and daily JSON snapshots.
 - No API keys or third-party dependencies required.
@@ -30,7 +30,7 @@ Projects are filtered by repository names, descriptions, and programming languag
 
 ## Automation
 
-Run **Actions → Daily Finance Trending → Run workflow** for a manual update. Monthly archives are generated automatically; projects are listed only once by their first-seen month.
+Run **Actions → Daily Github Trending → Run workflow** for a manual update. Run **Actions → Monthly Github Trending Archive → Run workflow** to archive completed months. Monthly archiving runs at **08:00 (UTC+8) on the first day of each month**; projects are listed once by their first-seen month.
 
 Edit `README.template.md` to change this page. Run `python -m unittest discover -s tests -v` to test locally.
 

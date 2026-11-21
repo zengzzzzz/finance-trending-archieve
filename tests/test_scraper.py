@@ -2,6 +2,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from arcived_month import archive_completed_months
 from scraper import ROOT, classify, load_config, parse_trending, read_json, trending_url, update_archive
 
 
@@ -70,6 +71,7 @@ class ScraperTests(unittest.TestCase):
             root = self.root(temporary)
             self.assertEqual(update_archive(root, '2026-12-31', [self.repo()], [], 1), 1)
             self.assertEqual(update_archive(root, '2027-01-01', [self.repo('Demo/LLM-kit')], [], 1), 0)
+            archive_completed_months(root, '2027-01-01')
             self.assertTrue((root / 'archived/2026-12.md').exists())
             self.assertNotIn('[Demo/LLM-kit]', (root / 'README.md').read_text(encoding='utf-8'))
             records = read_json(root / 'data/repositories.json', {})['repositories']
