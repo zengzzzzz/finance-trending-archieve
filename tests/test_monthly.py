@@ -44,7 +44,8 @@ class MonthlyArchiveTests(unittest.TestCase):
             readme = (root / "README.md").read_text(encoding="utf-8")
             self.assertIn("[demo/current]", readme)
             self.assertNotIn("[demo/old]", readme)
-            self.assertIn("data/daily/2026-11-15.json", readme)
+            self.assertNotIn("[Daily Snapshot]", readme)
+            self.assertNotIn("[Project Index]", readme)
             self.assertIn("**0** found today", readme)
             self.assertEqual(before, {k: v for k, v in self.files(root).items() if k.startswith("data/")})
 
