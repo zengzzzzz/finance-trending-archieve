@@ -1,10 +1,21 @@
 # Finance Trending Archive
 
+A daily, deduplicated archive of finance projects on GitHub Trending, with monthly history and JSON snapshots.
+
 [![Daily Github Trending](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/schedule_daily.yml/badge.svg)](https://github.com/zengzzzzz/finance-trending-archieve/actions/workflows/schedule_daily.yml)
 
-Track and archive finance projects discovered on GitHub Trending.
+**[Browse this month's projects](#new-this-month)** · **[Monthly archives](archived/README.md)**
+
+Browse directly on GitHub. Projects are listed once, in the month they were first discovered.
 
 <!-- SUMMARY -->
+
+## New This Month
+
+<!-- ENTRIES -->
+
+<details>
+<summary>How it works, configuration, and running your own archive</summary>
 
 ## Features
 
@@ -34,6 +45,4 @@ Run **Actions → Daily Github Trending → Run workflow** for a manual update. 
 
 Edit `README.template.md` to change this page. Run `python -m unittest discover -s tests -v` to test locally.
 
-## New This Month
-
-<!-- ENTRIES -->
+</details>
