@@ -247,8 +247,7 @@ def render_readme(root, today, records, snapshot, additions):
     current = [r for r in records.values() if r["first_seen"].startswith(today[:7])]
     snapshot_day = snapshot.get("date")
     found_today = len(snapshot.get("repositories", [])) if snapshot_day == today else 0
-    snapshot_link = f"[Daily Snapshot](data/daily/{snapshot_day}.json)" if snapshot_day else "No daily snapshot yet"
-    summary = f"Updated: **{today} (UTC+8)** · **{len(records)}** projects archived · **{len(current)}** new this month · **{found_today}** found today\n\n{snapshot_link} · [Project Index](data/repositories.json) · [Monthly Archives](archived/README.md)"
+    summary = f"Updated: **{today} (UTC+8)** · **{len(records)}** projects archived · **{len(current)}** new this month · **{found_today}** found today\n\n[Monthly Archives](archived/README.md)"
     write_text(root / "README.md", template.replace("<!-- SUMMARY -->", summary).replace("<!-- ENTRIES -->", entries_markdown(current)))
 
 

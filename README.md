@@ -10,7 +10,7 @@ Browse directly on GitHub. Projects are listed once, in the month they were firs
 
 Updated: **2026-11-23 (UTC+8)** · **6** projects archived · **6** new this month · **0** found today
 
-[Daily Snapshot](data/daily/2026-11-23.json) · [Project Index](data/repositories.json) · [Monthly Archives](archived/README.md)
+[Monthly Archives](archived/README.md)
 
 ## New This Month
 
