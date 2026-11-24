@@ -8,7 +8,7 @@ A daily, deduplicated archive of finance projects on GitHub Trending, with month
 
 Browse directly on GitHub. Projects are listed once, in the month they were first discovered.
 
-Updated: **2026-11-23 (UTC+8)** · **6** projects archived · **6** new this month · **0** found today
+Updated: **2026-11-24 (UTC+8)** · **6** projects archived · **6** new this month · **0** found today
 
 [Monthly Archives](archived/README.md)
 
