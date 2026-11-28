@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-28",
+  "repositories": [],
+  "sources": [
+    "https://github.com/trending/c%2B%2B?since=daily",
+    "https://github.com/trending/c?since=daily",
+    "https://github.com/trending/go?since=daily",
+    "https://github.com/trending/java?since=daily",
+    "https://github.com/trending/javascript?since=daily",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/typescript?since=daily",
+    "https://github.com/trending?since=daily"
+  ],
+  "schema_version": 1,
+  "scanned_repositories": 116
+}
